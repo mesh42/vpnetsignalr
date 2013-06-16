@@ -1,0 +1,85 @@
+﻿/**@license
+____   ___.__         __               .__    __________                        .__.__                
+\   \ /   |__________/  |_ __ _______  |  |   \______   _____ ____________    __| _|__| ______ ____   
+ \   Y   /|  \_  __ \   __|  |  \__  \ |  |    |     ___\__  \\_  __ \__  \  / __ ||  |/  ____/ __ \  
+  \     / |  ||  | \/|  | |  |  // __ \|  |__  |    |    / __ \|  | \// __ \/ /_/ ||  |\___ \\  ___/  
+   \___/  |__||__|   |__| |____/(____  |____/  |____|   (____  |__|  (____  \____ ||__/____  >\___  > 
+                                     \/                      \/           \/     \/        \/     \/  
+ _______ __                   __ ______                
+|     __|__.-----.-----.---.-|  |   __ \
+|__     |  |  _  |     |  _  |  |      < 
+|_______|__|___  |__|__|___._|__|___|__|    
+           |_____|                                                              
+
+    This file is part of VPNET SignalR Version 0.0.1
+
+    Copyright (c) 2012-2013 CUBE3 (Cit:36)
+
+    VPNET is free software: you can redistribute it and/or modify it under the terms of the 
+    GNU Lesser General Public License (LGPL) as published by the Free Software Foundation, either
+    version 2.1 of the License, or (at your option) any later version.
+
+    VPNET is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; without even
+    the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the LGPL License
+    for more details.
+
+    You should have received a copy of the GNU Lesser General Public License (LGPL) along with VPNET.
+    If not, see <http://www.gnu.org/licenses/>. 
+*/
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/dark-hive/jquery-ui.css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/jquery-ui.min-1.10.3.js"></script>
+    <script src="Scripts/jquery.signalR-1.1.2.min.js"></script>
+    <script src="./signalr/hubs"></script>
+    <script src="Scripts/jquery.signalR.vpnet-0.0.1.js"></script>
+    <script src="Scripts/jquery.signalR.vpnet.examples-0.0.1.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+                $.connection.hub.start().done(function () {
+                    $.vp.init("0.0.1");
+                });
+            });
+            
+            jQuery(document).ready(function ($) {
+            
+            $(function () {
+                $("#cmdLogin").button();
+                $("#loginForm").dialog({
+                    autoOpen:false
+                });
+                $("#events").dialog({
+                    autoOpen:false
+                });
+                
+            });
+    </script>
+</head>
+<body>
+    <div class="header">
+        VPNET SignalR Jquery Examples
+    </div>
+    <div id="events" title="Event monitor">
+    </div>
+    <div id="loginForm" title="Login to universe">
+        <div>User name</div>
+        <div>
+            <input id="txtLoginName" type="text" /></div>
+        <div>Password</div>
+        <div>
+            <input id="txtLoginPassword" type="password" /></div>
+        <div>Bot Name</div>
+        <div>
+            <input id="txtLoginBotName" type="text" value="vpnet signalr" /></div>
+        <div>Enter world</div>
+        <div>
+            <input id="txtLoginWorld" type="text" /></div>
+        <div>
+            <input id="cmdLogin" type="submit" value="login" /></div>
+    </div>
+</body>
+</html>

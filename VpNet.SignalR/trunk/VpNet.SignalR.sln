@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VpNet.SignalR", "VpNet.SignalR\VpNet.SignalR.csproj", "{7CE48F98-985B-494E-8125-1D40AB795F00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{752CF3E9-74D3-4C65-8723-EFD4F8D59DAB}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\VpNet.dll = Dependencies\VpNet.dll
+		Dependencies\vpsdk.dll = Dependencies\vpsdk.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VpNet.SignalR.Examples", "VpNet.SignalR.Examples\VpNet.SignalR.Examples.csproj", "{A8FF2145-F0B5-4984-A251-CFAF0CDB63CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CE48F98-985B-494E-8125-1D40AB795F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE48F98-985B-494E-8125-1D40AB795F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CE48F98-985B-494E-8125-1D40AB795F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CE48F98-985B-494E-8125-1D40AB795F00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8FF2145-F0B5-4984-A251-CFAF0CDB63CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8FF2145-F0B5-4984-A251-CFAF0CDB63CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8FF2145-F0B5-4984-A251-CFAF0CDB63CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8FF2145-F0B5-4984-A251-CFAF0CDB63CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

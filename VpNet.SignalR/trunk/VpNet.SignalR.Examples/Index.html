@@ -46,16 +46,17 @@ ____   ___.__         __               .__    __________                        
             });
             
             jQuery(document).ready(function ($) {
-            
-            $(function () {
-                $("#cmdLogin").button();
-                $("#loginForm").dialog({
-                    autoOpen:false
+
+                $(function() {
+                    $("#cmdLogin").button();
+                    $("#loginForm").dialog({
+                        autoOpen: false
+                    });
+                    $("#events").dialog({
+                        autoOpen: false
+                    });
+
                 });
-                $("#events").dialog({
-                    autoOpen:false
-                });
-                
             });
     </script>
 </head>

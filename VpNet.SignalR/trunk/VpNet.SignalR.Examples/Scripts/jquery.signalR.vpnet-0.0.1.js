@@ -94,6 +94,10 @@ ____   ___.__         __               .__    __________                        
         login: function (userName, password, botName, world) {
             s.login(userName, password, botName, world);
         },
+        
+        logout: function () {
+            s.logOut();
+        },
 
         init: function (args) {
             s.boot(args);

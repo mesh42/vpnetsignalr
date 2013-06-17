@@ -107,6 +107,15 @@ namespace VpNet.SignalR
             }
         }
 
+        public void LogOut()
+        {
+            if (_vp !=null)
+            {
+                _vp.Dispose();
+            }
+                
+        }
+
 
         public void Say(string message)
         {

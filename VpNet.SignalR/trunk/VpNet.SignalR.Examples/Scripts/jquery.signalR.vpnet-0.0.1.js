@@ -37,7 +37,7 @@ ____   ___.__         __               .__    __________                        
     // client/server event declarations for vp instance.
     // for args argument objects, please look at the technical documentation of the VPNET SDK the objects are
     // serialized transparantly to JSON and exposed as Javascript objects.
-    c.onException = function(args) { $.vp.onException(args); };
+    c.onException = function (args) { $.vp.onException(args); };
     c.onLogin = function (args) { $.vp.onLogin(args); };
     c.onAvatarEnter = function (args) { $.vp.onAvatarEnter(args); };
     c.onAvatarChange = function (args) { $.vp.onAvatarChange(args); };
@@ -65,7 +65,7 @@ ____   ___.__         __               .__    __________                        
 
     $.vp = {
         onLogin: function (args) { },
-        onException: function (args){ },
+        onException: function (args) { },
         onAvatarEnter: function (args) { },
         onAvatarLeave: function (args) { },
         onAvatarChange: function (args) { },
@@ -94,7 +94,7 @@ ____   ___.__         __               .__    __________                        
         login: function (userName, password, botName, world) {
             s.login(userName, password, botName, world);
         },
-        
+
         logout: function () {
             s.logOut();
         },
@@ -102,7 +102,7 @@ ____   ___.__         __               .__    __________                        
         init: function (args) {
             s.boot(args);
         },
-        
+
         subscribe: function (event) {
             s.subscribe(event);
         },
@@ -132,6 +132,9 @@ ____   ___.__         __               .__    __________                        
         },
         addObject: function (vpObject) {
             s.addObject(vpObject);
+        },
+        queryCell: function (cellX, cellZ) {
+            s.queryCell(cellX, cellZ);
         },
         initialize: function () {
             alert('you need to implement your initialize function in your bot.');

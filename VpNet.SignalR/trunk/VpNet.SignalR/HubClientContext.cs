@@ -51,7 +51,8 @@ namespace VpNet.SignalR
         {
             lock (this)
             {
-
+                if (_delegate.ContainsKey(args))
+                    return;
                 MethodInfo method = typeof(T).GetMethod
                     (args, BindingFlags.Public | BindingFlags.Instance);
                 // Subscribe to the event

@@ -109,7 +109,7 @@ namespace VpNet.SignalR
 
         public void LogOut()
         {
-            _t.Dispose();
+            if (_t != null) _t.Dispose();
             _vp.ReleaseEvents();
             if (_vp !=null)
             {

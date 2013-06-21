@@ -159,5 +159,10 @@ namespace VpNet.SignalR
         {
             Instance.AddObject(vpObject);
         }
+
+        public void QueryCell(int cellX, int cellZ)
+        {
+            Instance.QueryCell(cellX, cellZ);
+        }
     }
 }

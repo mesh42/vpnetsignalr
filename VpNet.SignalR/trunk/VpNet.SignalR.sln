@@ -3,13 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VpNet.SignalR", "VpNet.SignalR\VpNet.SignalR.csproj", "{7CE48F98-985B-494E-8125-1D40AB795F00}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{752CF3E9-74D3-4C65-8723-EFD4F8D59DAB}"
-	ProjectSection(SolutionItems) = preProject
-		Dependencies\VpNet.dll = Dependencies\VpNet.dll
-		Dependencies\vpsdk.dll = Dependencies\vpsdk.dll
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VpNet.SignalR.Examples", "VpNet.SignalR.Examples\VpNet.SignalR.Examples.csproj", "{A8FF2145-F0B5-4984-A251-CFAF0CDB63CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A51FDADB-BA8B-4A6C-92EF-9050DDBF66AF}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution

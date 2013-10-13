@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            #compass    {left:calc(100% - 150px);opacity: 0.9;position:fixed; text-align:center; bottom:0;width: 150px;height: 150px; }
+        </style>
+        <meta charset="utf-8" />
+        <title>Animated Compass</title>
+        <script src="../../Scripts/jquery-1.9.1.min.js"></script>
+        <script src="../../Scripts/jquery-ui.min-1.10.3.js"></script>
+        <script src="../../Scripts/jquery.signalR-1.1.2.min.js"></script>
+        <script src="../../signalr/hubs"></script>
+        <script src="../../Scripts/jquery.signalR.vpnet-0.0.1.js"></script>
+        <script src='compass.js'></script>
+        <script>
+            jQuery(document).ready(function ($) {
+                $.connection.hub.start().done(function () {
+                    $.vp.init("0.0.1");
+                });
+            });
+        </script>
+    </head>
+	<body>
+		<canvas id="compass" width="200" height="200"></canvas>
+	</body>
+</html>

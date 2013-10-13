@@ -103,6 +103,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\style.css" />
+    <Content Include="Examples\Compass\compass.js" />
+    <Content Include="Examples\Compass\compass.png" />
+    <Content Include="Examples\Compass\index.html" />
+    <Content Include="Examples\Compass\needle.png" />
+    <Content Include="Examples\Compass\readme.txt" />
     <Content Include="Index.html" />
     <Content Include="license.txt" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
